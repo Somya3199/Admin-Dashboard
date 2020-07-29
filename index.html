@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+
+  <title>Admin</title>
+  <link href="custom/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <div id="wrapper">
+
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: rgb(70, 22, 160);">
+
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+          <img class="img-fluid" src="img/logo.png">
+        </div>
+      </a>
+
+      <br><li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="fas fa-tasks"></i>
+          <span>My Task</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="fa fa-folder"></i>
+          <span>My Project</span>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="fas fa-wallet"></i>
+          <span>My Wallet</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fa fa-history"></i>
+          <span>History Data</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fa fa-file-alt"></i>
+          <span>Invoice</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-info-circle"></i>
+          <span>Helps</span></a>
+      </li>
+
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <div id="content">
+
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+           
+                <span class="badge badge-danger badge-counter"></span>
+              </a>
+            </li>
+   
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+              
+                <span class="badge badge-danger badge-counter"></span>
+              </a>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+    
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Kizzie Basu</span>
+                <img class="img-profile rounded-circle" src= "https://source.unsplash.com/fn_BT9fwg_E/">
+              </a>
+             
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <div class="row">
+
+            <!-- Earnings (Monthly) -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Monthly Sale</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">65%</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Yearly Sale</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">75%</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Statistics</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Month</a>
+                      <a class="dropdown-item" href="#">Year</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Earning in month</h6>
+                  <div class="dropdown no-arrow"> 
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                    <h3><span class="middle"><b>75%</b></span></h3>
+                  </div>
+                  <div class="mt-4 text-center small">
+                    <h6 class="mt-3"><span>Deposit: </span><span>$54 1 875 574</span></h6> 
+                    <h6 class="mt-3"><span>Expense: </span><span>$54 1 875 574</span></h6>
+                    <h6 class="mt-3"><span>Payable: </span><span>$54 1 875 574</span></h6>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-4 mb-4">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Monthly Sale</h6>
+                </div>
+                <div class="card-body">
+                  <div class="monthGraph">
+                    <div><i class="fas fa-arrow-up fa-3x"></i></div>
+                  </div>
+                  <h6 class="text-gray-600 text-end" style="font-size: 500; color: indigo; margin-left: 225px;">75%</h6>
+                  <div class="meter">
+                    <span style="width: 75%"></span>
+                </div>
+                <p style="font-size: 25px; font-weight: bold; margin-left: 80px; margin-top: 15px; margin-bottom: 0;">20 54 1</p>
+				        <p style="font-size: 15px; margin-left: 83px; color:#8B8888">Today Income</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 mb-4">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Yearly Sale</h6>
+                </div>
+                <div class="card-body">
+                  <div class="yearGraph">
+                    <div><i class="fas fa-arrow-up fa-3x"></i></div>
+                  </div>
+                  <h6 class="text-gray-600 text-end" style="font-size: 500; color: indigo; margin-left: 225px;">65%</h6>
+                  <div class="meter1">
+                    <span style="width: 65%"></span>
+                  </div>  
+                <p style="font-size: 25px; font-weight: bold; margin-left: 80px; margin-top: 15px; margin-bottom: 0;">20 54 1</p>
+				        <p style="font-size: 15px; margin-left: 83px; color:#8B8888">Today Income</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 mb-4">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Calendar</h6>
+                </div>
+                <div class="card-body">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <i class="fas fa-angle-left"></i>
+                    <h5>29 July, 2020</h5>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                  <div class="days">
+                    <ul>
+                      <li>Mon</li>
+                      <li>Tue</li>
+                      <li>Wed</li>
+                      <li>Thu</li>
+                      <li>Fri</li>
+                      <li>Sat</li>
+                      <li>Sun</li>
+                    </ul>
+                  </div>
+                  <div class="numbers">
+                    <ul>
+                      <div style="display: flex;">
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                    </div>
+                    <div style="display: flex;">
+                      <li>08</li>
+                      <li>09</li>
+                      <li>10</li>
+                      <li>11</li>
+                      <li style="font-size: 20px">12</li>
+                      <li style="font-size: 20px">13</li>
+                      <li style="font-size: 20px">14</li>
+                    </div>	
+                    <div style="display: flex;">
+                      <li>15</li>
+                      <li>16</li>
+                      <li style="font-size: 20px">17</li>
+                      <li style="font-size: 20px">18</li>
+                      <li style="font-size: 20px">19</li>
+                      <li style="font-size: 20px">20</li>
+                      <li style="font-size: 20px">21</li>
+                    </div>
+                    <div style="display: flex; justify-content: space-around;">
+                      <li style="font-size: 20px">22</li>
+                      <li style="font-size: 20px">23</li>
+                      <li style="font-size: 20px">24</li>
+                      <li style="font-size: 20px">25</li>
+                      <li style="font-size: 20px">26</li>
+                      <li style="font-size: 20px">27</li>
+                      <li style="font-size: 20px">28</li>
+                    </div>	
+                      <li style="background-color: lightblue; font-size: 22px">29</li>
+                      <li style="font-size: 22px">30</li>
+                      <li style="font-size: 22px">31</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="custom/jquery/jquery.js"></script>
+  <script src="custom/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="custom/jquery-easing/jquery.easing.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/admin.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="custom/chart.js/Chart.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
